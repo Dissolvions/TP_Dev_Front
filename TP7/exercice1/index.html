@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Rectangle</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="exo-header">
+      <nav class="exo-nav">
+        <a class="nav-prev" href="../../TP6/exercice2/index.html"
+          >← Précédent</a
+        >
+        <div class="nav-center">
+          <h1 class="exo-title">TP7 – Exercice 1</h1>
+          <p>
+            Cet exercice m’a permis de travailler sur le canvas en JavaScript et
+            sur l’interaction avec les boutons pour modifier les propriétés d’un
+            rectangle. J’ai appris à dessiner des formes, changer leur couleur,
+            leur taille et leur style, et mettre à jour dynamiquement les
+            informations affichées à l’écran.
+          </p>
+          <p>
+            La difficulté principale dans cet exercice a été de maintenir l’état
+            du rectangle correctement tout en permettant à tous les boutons
+            d’interagir simultanément sans provoquer d’erreurs ou de décalages
+            visuels.
+          </p>
+
+          <h2 class="exo-subtitle"><a href="../../index.html">Accueil</a></h2>
+        </div>
+        <a class="nav-next" href="../exercice2/index.html">Suivant →</a>
+      </nav>
+    </header>
+    <div class="container">
+      <canvas id="c" width="300" height="300"></canvas>
+      <div class="controls">
+        <button id="bw">Largeur +10</button>
+        <button id="bh">Hauteur +10</button>
+        <button id="bc">Couleur</button>
+        <button id="bs">Style</button>
+        <button id="bv">Visibilité</button>
+        <div class="status">
+          <div>Style: <span id="sS">plein</span></div>
+          <div>Largeur: <span id="sW">50</span> px</div>
+          <div>Hauteur: <span id="sH">50</span> px</div>
+          <div>Couleur: <span id="sC">jaune</span></div>
+          <div>Visible: <span id="sV">oui</span></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
