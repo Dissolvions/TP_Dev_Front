@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Exercice 3</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="exercice3.css" />
+  </head>
+  <body>
+    <header class="exo-header">
+      <nav class="exo-nav">
+        <a class="nav-prev" href="../exercices1/exercice1.html">← Précédent</a>
+        <div class="nav-center">
+          <h1 class="exo-title">TP4 – Exercice 2</h1>
+          <div class="exo-text">
+            <p>
+              Cet exercice m’a permis de découvrir différents sélecteurs CSS,
+              comme les pseudo-éléments, les sélecteurs d’attributs et les
+              pseudo-classes.
+            </p>
+            <p>
+              La difficulté est moyenne. La synthaxe est difficile à comprendre
+              mais après c'est plus simple.
+            </p>
+          </div>
+
+          <h2 class="exo-subtitle"><a href="../../index.html">Accueil</a></h2>
+        </div>
+        <a class="nav-next" href="../../TP5/exercice 2/index.html">Suivant →</a>
+      </nav>
+    </header>
+    <table>
+      <caption>
+        Quelques sélecteurs CSS
+      </caption>
+      <tr>
+        <th>Syntaxe</th>
+        <th>Signification</th>
+        <th>Type</th>
+        <th>Niveau CSS</th>
+      </tr>
+      <tr>
+        <td>E::first-line</td>
+        <td>La première ligne d'un élément E</td>
+        <td>Pseudo-élément</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>E::first-letter</td>
+        <td>La première lettre d'un élément E</td>
+        <td>Pseudo-élément</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>E::before</td>
+        <td>
+          Génère du contenu au début de la boîte de contenu de l'élément E
+        </td>
+        <td>Pseudo-élément</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>E::after</td>
+        <td>
+          Génère du contenu à la fin de la boîte de contenu de l'élément E
+        </td>
+        <td>Pseudo-élément</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>E[toto]</td>
+        <td>Un élément E avec l'attribut "toto"</td>
+        <td>Sélecteur d'attribut</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>E[toto="val"]</td>
+        <td>
+          Un élément E dont la valeur de l'attribut "toto" est exactement égale
+          à "val"
+        </td>
+        <td>Sélecteur d'attribut</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>E[toto~="val"]</td>
+        <td>
+          Un élément E dont la valeur de l'attribut "toto" est une liste de
+          valeurs séparées d'un espace et dont l'une est exactement égale à
+          "val"
+        </td>
+        <td>Sélecteur d'attribut</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>E[toto^="val"]</td>
+        <td>
+          Un élément E dont la valeur de l'attribut "toto" commence exactement
+          par la chaîne "val"
+        </td>
+        <td>Sélecteur d'attribut</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>E[toto$="val"]</td>
+        <td>
+          Un élément E dont la valeur de l'attribut "toto" finit exactement par
+          la chaîne "val"
+        </td>
+        <td>Sélecteur d'attribut</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>E[toto*="val"]</td>
+        <td>
+          Un élément E dont la valeur de l'attribut "toto" contient la
+          sous-chaîne "val"
+        </td>
+        <td>Sélecteur d'attribut</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>E[toto|="val"]</td>
+        <td>
+          Un élément E dont la valeur de l'attribut "toto" est une liste de
+          valeurs séparées d'un trait d'union commençant par la chaîne "val"
+        </td>
+        <td>Sélecteur d'attribut</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>E:root</td>
+        <td>Un élément E, racine du document</td>
+        <td>Pseudo-classe de structure</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>E:nth-child(n)</td>
+        <td>Un élément E, le n<sup>ième</sup> enfant de son parent</td>
+        <td>Pseudo-classe de structure</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>E:nth-last-child(n)</td>
+        <td>
+          Un élément E, le n<sup>ième</sup> enfant de son parent en comptant à
+          partir du dernier
+        </td>
+        <td>Pseudo-classe de structure</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>E:nth-of-type(n)</td>
+        <td>Un élément E, le n<sup>ième</sup> frère de son type</td>
+        <td>Pseudo-classe de structure</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>E:nth-last-of-type(n)</td>
+        <td>
+          Un élément E, le n<sup>ième</sup> frère de son type en comptant à
+          partir du dernier
+        </td>
+        <td>Pseudo-classe de structure</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>E:first-child</td>
+        <td>Un élément E, premier enfant de son parent</td>
+        <td>Pseudo-classe de structure</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>E:last-child</td>
+        <td>Un élément E, dernier enfant de son parent</td>
+        <td>Pseudo-classe de structure</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>E:first-of-type</td>
+        <td>Un élément E, premier frère de son type</td>
+        <td>Pseudo-classe de structure</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>E:last-of-type</td>
+        <td>Un élément E, dernier frère de son type</td>
+        <td>Pseudo-classe de structure</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>E:only-child</td>
+        <td>Un élément E, seul enfant de son parent</td>
+        <td>Pseudo-classe de structure</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>E:only-of-type</td>
+        <td>Un élément E, seul frère de son type</td>
+        <td>Pseudo-classe de structure</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>E:empty</td>
+        <td>Un élément E qui n'a aucun enfant, y compris du contenu texte</td>
+        <td>Pseudo-classe de struture</td>
+        <td>3</td>
+      </tr>
+    </table>
+  </body>
+</html>

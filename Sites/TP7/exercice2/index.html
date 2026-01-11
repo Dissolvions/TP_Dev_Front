@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>échelle d'images</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="exo-header">
+      <nav class="exo-nav">
+        <a class="nav-prev" href="../exercice1/index.html">← Précédent</a>
+        <div class="nav-center">
+          <h1 class="exo-title">TP7 – Exercice 2</h1>
+          <p>
+            Cet exercice m’a permis de manipuler les images dans le canvas en
+            JavaScript et de travailler sur différentes méthodes d’affichage :
+            taille réelle, étirée, recadrée ou miroir. J’ai appris à calculer
+            les proportions et à adapter les coordonnées pour que les images
+            soient correctement centrées et ajustées.
+          </p>
+          <p>
+            La difficulté principale dans cet exercice a été de gérer les
+            calculs de recadrage et de mise à l’échelle pour que l’image
+            s’affiche correctement dans chaque cas, sans déformation ni perte
+            d’information importante.
+          </p>
+
+          <h2 class="exo-subtitle"><a href="../../index.html">Accueil</a></h2>
+        </div>
+        <a class="nav-next" href="../../TP8/exercice1/index.html">Suivant →</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>1) Image en taille réelle, centrée (canvas 1280×720)</h2>
+        <canvas id="c1" width="1280" height="720"></canvas>
+      </section>
+
+      <section>
+        <h2>2) Image qui occupe tout le canvas (étirée) (canvas 1280×720)</h2>
+        <canvas id="c2" width="1280" height="720"></canvas>
+      </section>
+
+      <section>
+        <h2>
+          3) Image qui occupe tout le canvas sans déformation (recadrée si
+          nécessaire) (canvas 1280×720)
+        </h2>
+        <canvas id="c3" width="1280" height="720"></canvas>
+        <p class="explain" id="explain3"></p>
+      </section>
+
+      <section>
+        <h2>
+          4) Ajuster le canvas pour afficher l'image en taille réelle à droite
+          et en miroir à gauche
+        </h2>
+        <canvas id="c4" width="1200" height="450"></canvas>
+        <p class="explain">
+          Le canvas mesure 1200×450 : image originale 600×450 à droite, copie
+          miroir 600×450 à gauche.
+        </p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

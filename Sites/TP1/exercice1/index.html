@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercice 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="exo-header">
+      <nav class="exo-nav">
+        <a class="nav-prev" href="../../TP8/exercice2/index.html"
+          >← Précédent</a
+        >
+
+        <div class="nav-center">
+          <h1 class="exo-title">TP1 – Exercice 1</h1>
+          <p class="exo-text">
+            Dans cet exercice, j’ai appris à utiliser la base Grid pour
+            organiser des éléments dans une page. Cet exercice m’a permis de
+            créer des grilles avec "tr", "th" et "td".
+          </p>
+
+          <p class="exo-text">
+            L'exercice a été difficile pour moi car c'était la première fois que
+            j'ai utilisé la balise Grid. Il y a un problème dans le tableau du
+            bas : les nombres ne sont pas alignés correctement.
+          </p>
+
+          <h2 class="exo-subtitle">
+            <a href="../../index.html">Accueil</a>
+          </h2>
+        </div>
+
+        <a class="nav-next" href="../exercice2/exercice2.html">Suivant →</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div>
+          <table class="tableau1">
+            <tr>
+              <th>flex-direction</th>
+              <th>flex-warp</th>
+              <th>justify-content</th>
+              <th>align-items</th>
+              <th>align-content</th>
+            </tr>
+
+            <tr>
+              <td rowspan="2" class="centretexte">
+                <span class="rouge">row</span><br />
+                row-reverse<br />
+                column<br />
+                column-reverse<br />
+              </td>
+
+              <td rowspan="2">
+                <span class="rouge">no-warp</span><br />
+                warp<br />
+                warp reverse<br />
+              </td>
+
+              <td class="titrev2">Axe principal (Main)</td>
+              <td colspan="2" class="titrev2">Axe secondaire (Cross)</td>
+            </tr>
+
+            <tr>
+              <td rowspan="3">
+                <span class="rouge">flex-start</span><br />
+                flex-end<br />
+                center<br />
+                space-between<br />
+                space-around<br />
+                space-evenly<br />
+              </td>
+
+              <td rowspan="3">
+                flex-start<br />
+                flex-end<br />
+                center<br />
+                basline<br />
+                <span class="rouge"> stretch</span><br />
+              </td>
+
+              <td rowspan="3">
+                flex-start<br />
+                flex-end<br />
+                center<br />
+                space-between<br />
+                space-around<br />
+                <span class="rouge"> stretch</span><br />
+              </td>
+            </tr>
+
+            <tr>
+              <th colspan="2">flew-flow</th>
+            </tr>
+
+            <tr>
+              <td colspan="2">flew-direction + flew warp</td>
+            </tr>
+          </table>
+        </div>
+
+        <header>
+          <div class="gauche1">
+            <h1>flex items</h1>
+            <h2>(élément enfants)</h2>
+          </div>
+
+          <div class="droite1">
+            <div>ITEM 1</div>
+            <div>ITEM 2</div>
+            <div>ITEM 3</div>
+          </div>
+        </header>
+
+        <div>
+          <table class="tableau2">
+            <tr>
+              <th>order</th>
+              <td colspan="3">0</td>
+            </tr>
+
+            <tr>
+              <th>flexrown</th>
+              <td>0</td>
+              <td colspan="2" rowspan="3">
+                <span class="bleue">flex:</span> 0 1 auto<br />
+              </td>
+            </tr>
+
+            <tr>
+              <th>flex-shrink</th>
+              <td>1</td>
+            </tr>
+
+            <tr>
+              <th>flex-basis</th>
+              <td>auto</td>
+            </tr>
+
+            <tr>
+              <th>alignself</th>
+              <td colspan="3">auto</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
